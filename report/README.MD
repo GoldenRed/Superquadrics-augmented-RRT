@@ -1,3 +1,3 @@
 # The Report
 
-[The report](Yared EA Final Thesis.pdf) was written using LaTex and the files are provided here.
+[The report](/FinalThesis.pdf) was written using LaTex and the files are provided here. Note that a folder called citeFiles has been added to .gitignore containing research articles/literature, so as to avoid copyright issues.
