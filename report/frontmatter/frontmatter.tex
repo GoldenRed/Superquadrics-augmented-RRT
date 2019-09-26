@@ -1,0 +1,32 @@
+% -------------------------------------------------- %
+%   Titlepage, front cover page                      %
+% -------------------------------------------------- %
+\titlepage
+
+% -------------------------------------------------- %
+%   Abstract, first english, then swedish            %
+% -------------------------------------------------- %
+\input{abstract}
+
+% -------------------------------------------------- %
+%   Acknowledgement                                  %
+% -------------------------------------------------- %
+\input{acknowledgement}
+
+% -------------------------------------------------- %
+%   Table of Contents                                %
+% -------------------------------------------------- %
+\tableofcontents
+\listoffigures
+\listoftables
+
+% -------------------------------------------------- %
+%   Glossary, acronyms and nomenclature              %
+% -------------------------------------------------- %
+% Glossary
+\printnoidxglossary[sort=word,type=main]
+% Acronym
+\printnoidxglossary[sort=word,type=acronym]
+% Nomenclature
+\input{preamble/nomenclature}
+\printnomenclature

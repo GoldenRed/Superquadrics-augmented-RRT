@@ -1,0 +1,31 @@
+Should fail:
+python GJK_V2.py 3 0 0
+python GJK_V2.py -3 0 0
+python GJK_V2.py 0 3 0
+python GJK_V2.py 0 -3 0
+python GJK_V2.py 0 0 3
+python GJK_V2.py 0 0 -3
+
+Should pass:
+python GJK_V2.py 2 0 0
+python GJK_V2.py -2 0 0
+python GJK_V2.py 0 2 0
+python GJK_V2.py 0 -2 0
+python GJK_V2.py 0 0 2
+python GJK_V2.py 0 0 -2
+
+
+Weird tests:
+python GJK_V2.py 2.01 0 0
+python GJK_V2.py -2.01 0 0
+python GJK_V2.py 0 2.01 0
+python GJK_V2.py 0 -2.01 0
+python GJK_V2.py 0 0 2.01
+python GJK_V2.py 0 0 -2.01
+
+python GJK_V2.py 2.02 0 0
+python GJK_V2.py -2.02 0 0
+python GJK_V2.py 0 2.02 0
+python GJK_V2.py 0 -2.02 0
+python GJK_V2.py 0 0 2.02
+python GJK_V2.py 0 0 -2.02

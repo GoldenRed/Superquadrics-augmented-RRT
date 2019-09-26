@@ -1,0 +1,32 @@
+
+\usetikzlibrary{shapes,fit}
+\begin{tikzpicture}%[node distance = 3cm, auto,scale=0.85, every node/.style={scale=0.85}]
+% Place nodes
+\centering
+
+\begin{scope}[every node/.style={circle,thick,draw}]
+\node [shape=circle, draw=black] (A) at (0,0) {A};
+\node [shape=circle, draw=black] (B) at (2,2) {B};
+\node [shape=circle, draw=black] (C) at (2,-2) {C};
+\end{scope}
+% Draw edges
+%\path [line] (BG) -- (RQ);
+\path [line] (A) -- (B);
+\path [line] (A) -- (C);
+\path [line] (B) -- (C);
+\begin{scope}[>={Stealth[black]},
+	every node/.style={fill=white,circle},
+	every edge/.style={draw=red,very thick}]
+\path [->] (A) edge node {$1$} (B);
+\path [->] (A) edge node {$5$} (C);
+\path [->] (B) edge node {$3$} (C);
+
+%\path [->] (B) edge[bend right=60] node {$1$} (E); 
+\end{scope}
+
+
+
+%\path [line] (SQ.east) --([shift={(5mm,0mm)}]SQ.east)--node[anchor=south] {} ([shift={(5mm,0mm)}]gather.east) -- (gather.east);
+
+\end{tikzpicture}
+

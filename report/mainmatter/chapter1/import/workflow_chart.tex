@@ -1,0 +1,59 @@
+
+\usetikzlibrary{shapes,fit}
+\begin{tikzpicture}[node distance = 3cm, auto,scale=0.85, every node/.style={scale=0.85}]
+% Place nodes
+\centering
+%\node [block] (BG) {Background};
+%\node [block, below of=BG] (RQ) {Research Questions};
+\node [block] (RQ) {Research Questions};
+\node [block, below of=RQ] (LR) {Literature Review};
+\node [block, below of=LR] (Impl) {Implement};
+
+
+
+\node [block, draw=red, right of=Impl] (SQ) {SQ};
+\node [block, draw=red, below of=SQ] (GJK) {GJK};
+\node [block, draw=red, right of=SQ] (RRT) {RRT};
+\node [block, dashed, right of=GJK] (A*) {A*};
+
+\node [block, right of=RRT] (gather) {Gather Results};
+\node [block, above of=gather] (eval) {Evaluate Results};
+\node [block, above of=eval] (con) {Conclusion};
+
+
+\node [block, draw=blue, left of=LR] (ch2) {Chapter 2};
+\node [block, draw=blue, left of=Impl] (ch3) {Chapter 3};
+\node [block, draw=blue, right of=gather] (ch4) {Chapter 4};
+\node [block, draw=blue, right of=eval] (ch5) {Chapter 5};
+
+% Draw edges
+%\path [line] (BG) -- (RQ);
+\path [line] (RQ) -- (LR);
+\path [line] (LR) -- (Impl);
+
+\path [line] (Impl) -- (SQ);
+\path [line] (Impl.south) -- (GJK.west);
+
+\path [line, red] (SQ) -- (RRT);
+%\path [line, dashed] (GJK) -- (A*);
+%\path [line, dashed] (SQ.south) -- (A*.north);
+\path [line, red] (GJK.north) -- (RRT.south);
+
+
+%\path [line] (SQ.east) --([shift={(5mm,0mm)}]SQ.east)--node[anchor=south] {} ([shift={(5mm,0mm)}]gather.east) -- (gather.east);
+\path [line] (RRT) -- (gather);
+\path [line, dashed] (A*.east) -- (gather.south);
+
+\path [line] (gather) -- (eval);
+\path [line] (eval) -- (con);
+
+
+%\path [line] (gather.south) -- ([shift={(0mm,-3mm)}]gather.south)--node[anchor=north] {Reimplement}([shift={(0mm,-3mm)}]implement.south) --(implement.south);
+
+\path [line, blue] (LR) -- (ch2);
+\path [line, blue] (Impl) -- (ch3);
+\path [line, blue] (gather) -- (ch4);
+\path [line, blue] (eval) -- (ch5);
+
+\end{tikzpicture}
+

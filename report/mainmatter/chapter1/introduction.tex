@@ -1,0 +1,126 @@
+\chapter{Introduction} \label{ch1:introduction} 
+The introduction presents the project, detailing the background motivating its conception as well as the manner and scope of its execution.
+
+\section{Background} \label{subsec:backg}
+Entire industries have emerged on the basis of robotic manipulators autonomously and physically interacting with objects. From production lines employing factory robots working non-stop to machine, weld, paint and assemble parts[\citeauthor{Appleton1987}]; to automated milking systems used by dairy farmers[\citeauthor{Rossing1997}] allowing for cows to milk themselves; the uses for responsive and flexible robotic manipulators are plentiful. Furthermore, the integration of machine vision into these systems increases their utility [\citeauthor{Snyder2010}].
+
+Planning the motion of these robotic manipulators is a challenge. The addition of more \gls{DoF}, even to the point of redundancy, is used to expand the solution space available to solve the manipulation problem. This expansion, however, comes at the cost of increasing the difficulty on the motion planner to produce collision free motion paths.
+
+\subsection*{Sampling-based Path Planning}
+
+One commonly used family of algorithms in the field of robotic motion planning is the sampling-based family of algorithms. This group of algorithms can roughly be divided into two categories: single-query and multi-query algorithms. Multi-query algorithms assume that the environment which the manipulator will navigate itself through is static enough that it is possible to prepare a map of possible paths in advance. The former, however, makes no such assumption of staticity on the environment, resulting in a need to produce a collision-free path online.
+
+Within the category of single-query sampling-based algorithms, an algorithm that has seen significant use is the \gls{RRT} algorithm and its variants  [\citeauthor{Siciliano2016}]. \gls{RRT}s are a popular and general approach for solving single-query high-dimensional motion planning in robotics [\citeauthor{Bialkowski2013}]. \gls{RRT}s work by sampling various angle configurations in configuration space and connecting collision-free points in a tree-like fashion until a path has been found from, start pose to goal pose [\citeauthor{LaValle1998}].
+
+The main bottleneck of \gls{RRT}s and sample-based path planning algorithms in general, however, is the collision detection mechanism[\citeauthor{LaValle2006}].
+
+\subsection*{Superquadrics} 
+
+In mathematics there exists a family of 3D geometric shapes called \gls{SQ} [\citeauthor{Jaklic2000}], a generalization on the Quadrics family of 2D surfaces in 3D space. These have been applied in the computer graphic modelling field to describe 3D shapes since the 1980s [\citeauthor{Yerry1985}]. One of their big advantage is that they can describe a wide variety of solid objects under a mathematical closed form using only eleven parameters [\citeauthor{Katsoulas2003}]. 
+
+An \gls{SQ} has the implicit equation $F(P, \Lambda)$, where $P$ is a point $(x_P,y_P,z_P)$ and $\Lambda$ the 11 parameter defining the \gls{SQ}. The implicit function can be used as a very efficient test of whether $P$ is:
+
+\begin{enumerate}
+	\item[$-$] inside the \gls{SQ}: $F(P, \Lambda) < 1$;
+	\item[$-$] outside the \gls{SQ}: $F(P, \Lambda) > 1$;
+	\item[$-$] on the surface of the \gls{SQ}: $F(P, \Lambda) = 1$.
+\end{enumerate}
+
+[\citeauthor{Fantacci2017}] used \gls{SQ} to successfully make a humanoid robot grip an unknown, unmarked object with its \gls{EE}. They pre-modelled the robot hand’s grasping volume with \gls{SQ} using a \gls{CAD} model. For the target object however, they used a 3D sensor to collect a 3D point cloud of its surface and were able to estimate the 11 parameters of a \gls{SQ} using non-linear optimization. 
+
+A number of other researchers have also shown the potential of \gls{SQ} to be used for shape and pose recovery of unknown objects in robotics using range data ([\citeauthor{Duncan2013}],[\citeauthor{Silva2016}], [\citeauthor{Biegelbauer2007}]). 
+
+\subsection*{Regarding Collision Detection in General for Robotic Manipulator Planning} 
+
+Collision detection is often treated as a “black box” in motion planning [\citeauthor{LaValle2006}], and in the experience of this thesis author rarely do researchers go into the specifics of how their algorithms handle it. It is often mentioned as a line in their pseudo-code section: \textit{“if collisiondetect(q) then:”}, such as in [\citeauthor{Lee}] and [\citeauthor{Klanke2006}]. The authors in [\citeauthor{Hirano2005}] devoted one sentence to it, stating that they made use of the Proximity Query Package to do proximity checks between objects, relying on \gls{OBB}Trees [\citeauthor{Gottschalk1996}] for hierarchical representation of bounding volumes that can be queried for intersections. 
+
+Many researchers use model-based development and first deploy their algorithms in robotic simulators and \gls{CAD} software, which can handle their collision detection for them. In [\citeauthor{Lahouar2006}] the authors did their modelling in a Robotics \gls{CAD} software known as SMAR, which provided them with models of PUMA robotics. The creators of SMAR state in their paper [\citeauthor{Zeghloul1997}] that they rely on two parts to do collision checking. The first part consists of checking the intersections of the facets of the obstacles, reminiscent of the famous \gls{GJK} distance algorithm ([\citeauthor{Gilbert1988}], [\citeauthor{Lindemann2009}]). In order to speed up calculation, the CAD software pre-models all objects using bounding primitives like spheres and parallelepipeds. These are much easier to do initial checks with, and combining them using Boolean algebra allows for non-convex sets to be modeled, before resorting to the intersection of facets check. 
+
+The researcher in [\citeauthor{Park2015}] did something similar, choosing to represent his robot composed of two 6-DoF arms and a torso using spheres instead of in accordance with the exact virtual CAD model. This motivates the use of \gls{SQ} for collision detection in robotic arm simulation, as \gls{SQ} are a mathematical superset that encompass both spheres and some parallelepipeds. 
+
+\section{Purpose}
+
+The contribution of this thesis is to investigate the utility of augmenting the Rapidly-exploring Random Trees sampling-based algorithm by relying on \gls{SQ} to handle collision detection. The \gls{RRT} is augmented with a method to easily check the occurrence of a collision by evaluating the implicit function $F(.,.)$ in each iteration. If in an iteration, any point $P$ belonging to the \gls{EE} \gls{SQ} or, any of the individual manipulator links' \gls{SQ}, results in $F(P,.) < 1$, then a collision has occurred and the proposed path is discarded. 
+
+While \gls{SQ}, as previously mentioned, have been shown to be used for shape and pose estimation of unknown objects, as far as this thesis author has been able to find, \gls{SQ} have never been specifically used in conjunction with \gls{RRT} to handle collision detection. 
+
+\gls{SQ}s are useful in that they can be used to pre-model previously known objects (including the individual links of a robotic arm and \gls{EE}) while also be used to deal with unknown objects, expressing everything in a mathematically advantageous way that allows for potentially convenient collision checking in \gls{RRT}. The novelty, as well as the wide range of potential use cases in markerless visual servoing, makes it a topic worth researching.
+
+The thesis will attempt to answer the following questions:
+
+\begin{enumerate}
+	 \item[\textbf{RQ1}:] Comparing the outlined novel method to an alternative motion planning method such as A*, in combination with an alternative obstacle collision-detection method such as \gls{GJK} Distance algorithm, which is the better combination in regards to: 
+	 \begin{itemize} 
+	 	\item[\textbf{a}:] Computational processing time and memory management? 
+		\item[\textbf{b}:] Ability to handle arbitrary obstacle shapes? 
+	 \end{itemize}
+	 \item[\textbf{RQ2}:] When using the \gls{SQ}-based method for modeling a 6 DoF arm and performing collision detection, how well can it be fit to the arm shape compared to when \gls{GJK} is used?
+	 
+\end{enumerate}
+
+
+%\begin{enumerate}
+%	\item[$-$] Comparing the outlined novel method to an alternative motion planning method such as A*, in combination with an alternative obstacle collision-detection method such as \gls{GJK} Distance algorithm, which is the optimal combination in regards to: 
+%	\begin{itemize} 
+%		\item[-] computational processing time and memory management; 
+%		\item[-] capacity to handle arbitrary obstacle shapes. 
+%	\end{itemize}
+%	\item[$-$] Is it possible to design an \gls{SQ} model for a 6 DoF arm that when used for collision detection can give the same accuracy as when \gls{GJK} is used?
+%	
+%\end{enumerate}
+
+
+\section{Scope \& Delimitations}
+
+While some of the ultimate applications of this method is thought to be found in visual servoing, this project is limited to investigating what benefits and disadvantages an algorithm making use of \gls{SQ} to perform collision detection in \gls{RRT} has compared to existing methods. As such, no actual visual servoing will be done. 
+
+Furthermore, the following delimitations are set:
+\begin{enumerate}
+	\item[$-$] \textbf{RQ1a} will be answered by setting up and evaluating simulations for the \gls{RRT} and collision detection methods. A* will not be implemented, but instead examined qualitatively.
+	\item[$-$] \textbf{RQ1b} will be evaluated qualitatively.
+	\item[$-$] \textbf{RQ2} will be evaluated qualitatively. By fit, the analysis will be considered from the point of risking False Negatives and False Positives in the collision detection due to improper representation, as well as the ability to model arbitrary shapes. 
+	\item[$-$] The analysis of A* will be limited to the vanilla A*.
+	\item[$-$] Though the proposed method could work with multi-query sampling-based algorithms, only single-query sampling-based algorithms will be looked at - \gls{RRT} specifically.
+	\item[$-$] Of all the \gls{RRT} algorithms, only vanilla \gls{RRT} will be implemented.
+	\item[$-$] The six \gls{DoF} manipulator examined will be a fixed, serial chain arm.
+\end{enumerate}
+
+
+\section{Methodology} 
+
+In order to answer the stated research questions an \gls{SQ} collision detector must be implemented as well as an RRT planner that can utilize it, along with a \gls{GJK} collision detector. The two collision detector algorithms will be treated as "black boxes" that can be used interchangeably with any planning algorithm, provided that the virtual obstacles and virtual arm have been successfully loaded.
+
+The specifics of the implementation and certain algorithmic design choices will be detailed in \hyperref[ch3:implement]{Chapter 3}, and will have been developed in accordance with the theoretical background provided in \hyperref[ch2:theoframe]{Chapter 2}. Once all algorithm combinations have been tested and the results gathered they will be presented in \hyperref[ch4:resu]{Chapter 4} and further discussed in \hyperref[ch5:discussion]{Chapter 5}. See Figure \ref{fig:workflow} for a graphical representation of the workflow.
+
+%{\color{blue}Blue boxes}, {\color{blue}Blue boxes}
+
+\begin{figure}[h]
+	\input{import/workflow_chart}
+	\caption{Chart illustrating the workflow and temporal dependencies. Blue boxes represent work resulting in report substance. Red boxes represent work resulting in executable code. Dashed represents a qualitative analysis.}
+	\label{fig:workflow}
+\end{figure}
+
+
+
+\section{Ethics} 
+By itself, improving a path planning algorithm for markerless visual servoing does not raise ethical issues. But it is part of a general trend of autonomous robotics, which is having and will have a great effect on society. It ties into autonomous: 
+\begin{enumerate}
+	\item[$-$] driving, which will have significant effects on the employment of millions of lorry and taxi drivers all over the world, with up to 4 million jobs likely to be lost in the near future[\citeauthor{Austin2017}];
+	\item[$-$] operation of military drones, which is raising serious ethical concerns [\citeauthor{978-1-4799-4992-2/14}]; 
+	\item[$-$]  manufacturing, which is set to eliminate 800 million jobs by 2030 [\citeauthor{Manyika2017}]. 
+\end{enumerate}
+
+In addition to the impact on economic activity and employment, and the concerns associated with the creation of highly autonomous killing machines, there are also the concerns related to software and hardware reliability. If an autonomous vehicle is involved in an accident with fatal consequences as a result of a bug, who is responsible? These concerns need to be considered by anyone looking to use the results of this thesis.
+
+\section{Disposition}
+
+The disposition of this thesis report is as follows:
+
+\begin{enumerate}%[i]
+	\item[] \hyperref[ch1:introduction]{Chapter 1 Introduction} introduces this master thesis, the methodology and scope. 
+	\item[] \hyperref[ch2:theoframe]{Chapter 2 Theoretical Framework}  contains a compilation of the theoretical background in the respective fields, which will inform the implementation. 
+	\item[] \hyperref[ch3:implement]{Chapter 3 Implementation} details the implementation as based off of the chosen methodology and the theoretical background.
+	\item[] \hyperref[ch4:resu]{Chapter 4 Results} lists the results of a series of test rounds comparing the \gls{SQ} and \gls{GJK} algorithms, independently and as part of the \gls{RRT} algorithm.
+	\item[] In \hyperref[ch5:discussion]{Chapter 5 Discussion} the results are discussed in the context of the research questions, as well as the implementation in general. A concluding statement is prepared and suggestions for future work and research are given.
+\end{enumerate} 
+

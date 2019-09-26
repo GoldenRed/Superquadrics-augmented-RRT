@@ -1,0 +1,73 @@
+\babel@toc {english}{}
+\babel@toc {swedish}{}
+\babel@toc {english}{}
+\contentsline {chapter}{Acknowledgments}{vi}{Doc-Start}% 
+\contentsline {chapter}{Acronyms}{xiii}{section*.4}% 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}Purpose}{4}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}Scope \& Delimitations}{5}{section.1.3}% 
+\contentsline {section}{\numberline {1.4}Methodology}{5}{section.1.4}% 
+\contentsline {section}{\numberline {1.5}Ethics}{6}{section.1.5}% 
+\contentsline {section}{\numberline {1.6}Disposition}{7}{section.1.6}% 
+\contentsline {chapter}{\numberline {2}Theoretical Framework}{8}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Convexity}{8}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Regarding Robotic Arms}{9}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Configuration Space}{9}{subsection.2.2.1}% 
+\contentsline {section}{\numberline {2.3}Algorithms That Plan}{10}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}A*}{11}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Artificial Potential Fields}{17}{subsection.2.3.2}% 
+\contentsline {subsubsection}{The Local Minima Problem}{19}{subsubsection*.13}% 
+\contentsline {subsection}{\numberline {2.3.3}Model Predictive Control}{20}{subsection.2.3.3}% 
+\contentsline {subsubsection}{Constraints}{22}{subsubsection*.15}% 
+\contentsline {subsubsection}{MPC for Guidance}{24}{subsubsection*.16}% 
+\contentsline {subsubsection}{MPC for Robot Arms}{27}{subsubsection*.17}% 
+\contentsline {subsection}{\numberline {2.3.4}Rapidly-exploring Random Trees}{28}{subsection.2.3.4}% 
+\contentsline {subsubsection}{Sampling-based Methods}{28}{subsubsection*.18}% 
+\contentsline {subsubsection}{The Algorithm}{30}{subsubsection*.20}% 
+\contentsline {subsubsection}{Nonholonomic Constraints and Kinodynamics}{31}{subsubsection*.22}% 
+\contentsline {subsubsection}{Sampling}{32}{subsubsection*.24}% 
+\contentsline {subsubsection}{Optimality}{33}{subsubsection*.27}% 
+\contentsline {section}{\numberline {2.4}Collision Detection}{35}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}Bounding Box Methods}{35}{subsection.2.4.1}% 
+\contentsline {subsubsection}{Axis-Aligned Bounding Boxes}{35}{subsubsection*.29}% 
+\contentsline {subsubsection}{Oriented Bounding Boxes}{36}{subsubsection*.30}% 
+\contentsline {subsubsection}{Bounding Volume Hierarchy}{37}{subsubsection*.32}% 
+\contentsline {subsection}{\numberline {2.4.2}Gilbert-Jonhson-Keerthi Distance Algorithm}{37}{subsection.2.4.2}% 
+\contentsline {subsubsection}{Support Mapping Functions}{39}{subsubsection*.34}% 
+\contentsline {subsubsection}{Minkowski Difference}{39}{subsubsection*.35}% 
+\contentsline {subsubsection}{The Iterative Algorithm}{40}{subsubsection*.37}% 
+\contentsline {subsection}{\numberline {2.4.3}Superquadrics}{43}{subsection.2.4.3}% 
+\contentsline {subsubsection}{Fitting Superquadric Parameters to Range Data}{51}{subsubsection*.45}% 
+\contentsline {chapter}{\numberline {3}Implementation}{53}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Superquadrics}{53}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Intersection Checking}{54}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}The Problem of Uniform Angle Sampling}{55}{subsection.3.1.2}% 
+\contentsline {section}{\numberline {3.2}GJK}{57}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Support Mapping Function}{59}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Termination Conditions}{60}{subsection.3.2.2}% 
+\contentsline {section}{\numberline {3.3}RRT}{61}{section.3.3}% 
+\contentsline {section}{\numberline {3.4}Simulation Design and Measurements}{62}{section.3.4}% 
+\contentsline {chapter}{\numberline {4}Results}{64}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Comparing Collision Detection Methods}{64}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Collision Detection: True Negatives}{64}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Collision Detection: True Positives}{66}{subsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.1.3}Varying Number of Object Points}{66}{subsection.4.1.3}% 
+\contentsline {subsection}{\numberline {4.1.4}Large Number of Objects}{67}{subsection.4.1.4}% 
+\contentsline {section}{\numberline {4.2}RRT 6 Degrees of Freedom}{67}{section.4.2}% 
+\contentsline {chapter}{\numberline {5}Discussion}{70}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Research Questions}{70}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Handling Arbitrary Shapes}{70}{subsection.5.1.1}% 
+\contentsline {subsection}{\numberline {5.1.2}Modeling a 6 DoF Arm}{72}{subsection.5.1.2}% 
+\contentsline {subsection}{\numberline {5.1.3}Qualitative Analysis of A*}{72}{subsection.5.1.3}% 
+\contentsline {subsubsection}{Memory Issues}{72}{subsubsection*.63}% 
+\contentsline {subsubsection}{Parameter Tuning}{73}{subsubsection*.64}% 
+\contentsline {subsubsection}{Forbidden Regions}{74}{subsubsection*.65}% 
+\contentsline {subsection}{\numberline {5.1.4}Evaluation of the Computational Memory Management}{74}{subsection.5.1.4}% 
+\contentsline {subsection}{\numberline {5.1.5}Evaluation of the Computational Processing Time}{75}{subsection.5.1.5}% 
+\contentsline {subsubsection}{Regarding the Implementation}{75}{subsubsection*.66}% 
+\contentsline {subsubsection}{Comparison}{75}{subsubsection*.67}% 
+\contentsline {section}{\numberline {5.2}Future Work}{78}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Regarding the Implementation}{78}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Use in Visual Servoing}{78}{subsection.5.2.2}% 
+\contentsline {section}{\numberline {5.3}Conclusion}{79}{section.5.3}% 

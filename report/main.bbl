@@ -1,0 +1,607 @@
+\begin{thebibliography}{83}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Akgun and Stilman(2011)]{Akgun2011}
+Baris Akgun and Mike Stilman.
+\newblock {Sampling Heuristics for Optimal Motion Planning in High Dimensions}.
+\newblock \emph{IEEE/RSJ International Conference on Intelligent Robots and
+  Systems (IROS)}, 2011.
+\newblock URL
+  \url{http://www.leonardjaillet.com/Publications{\_}files/Iros08{\_}Jaillet{\_}TransitRRT.pdf}.
+
+\bibitem[Appleton and Williams(1987)]{Appleton1987}
+E.~Appleton and D.~J. Williams.
+\newblock \emph{{Industrial Robot Applications}}.
+\newblock Springer, Dordrecht, 1987.
+\newblock ISBN 978-94-009-3125-1.
+\newblock \doi{10.1007/978-94-009-3125-1}.
+
+\bibitem[Austin et~al.(2017)Austin, Bucknor, Cashman, and
+  Rockeymoore]{Austin2017}
+Algernon Austin, Cherrie Bucknor, Kevin Cashman, and Maya Rockeymoore.
+\newblock {Stick Shift: Autonomous Vehicles, Driving Jobs, and the Future of
+  Work}.
+\newblock Technical report, Center for Global Policy Solutions, 2017.
+
+\bibitem[Barr(1984)]{Barr1984}
+Alan~H. Barr.
+\newblock {Global and local deformations of solid primitives}.
+\newblock \emph{ACM SIGGRAPH Computer Graphics}, 18\penalty0 (3):\penalty0
+  21--30, 1984.
+\newblock ISSN 00978930.
+\newblock \doi{10.1145/964965.808573}.
+
+\bibitem[Bialkowski et~al.(2013)Bialkowski, Karaman, Otte, and
+  Frazzoli]{Bialkowski2013}
+Joshua Bialkowski, Sertac Karaman, Michael Otte, and Emilio Frazzoli.
+\newblock {Efficient collision checking in sampling-based motion planning}.
+\newblock \emph{Springer Tracts in Advanced Robotics}, 86:\penalty0 365--380,
+  2013.
+\newblock ISSN 1610742X.
+\newblock \doi{10.1007/978-3-642-36279-8_22}.
+
+\bibitem[Biegelbauer and Vincze(2007)]{Biegelbauer2007}
+Georg Biegelbauer and Markus Vincze.
+\newblock {Efficient 3D object detection by fitting superquadrics to range
+  image data for robot's object manipulation}.
+\newblock \emph{Proceedings - IEEE International Conference on Robotics and
+  Automation}, \penalty0 (April):\penalty0 1086--1091, 2007.
+\newblock ISSN 10504729.
+\newblock \doi{10.1109/ROBOT.2007.363129}.
+
+\bibitem[Broeck et~al.(2009)Broeck, Diehl, and Swevers]{Broeck}
+Lieboud Van~Den Broeck, Moritz Diehl, and Jan Swevers.
+\newblock {Time optimal MPC for mechatronic systems}.
+\newblock \emph{IEEE Conference on Decision and Control (CDC)}, page 3000,
+  2009.
+
+\bibitem[Cameron(2002)]{Cameron2002}
+Stephen Cameron.
+\newblock {Enhancing GJK: computing minimum and penetration distances between
+  convex polyhedra}.
+\newblock \penalty0 (April):\penalty0 3112--3117, 2002.
+\newblock \doi{10.1109/robot.1997.606761}.
+
+\bibitem[Cheng et~al.(2001)Cheng, Shen, and LaValle]{Cheng2001}
+Peng Cheng, Zuojun Shen, and Steven~M. LaValle.
+\newblock {RRT-based Trajectory Design for Autonomous Automibles and
+  Spacecraft}.
+\newblock \emph{Archives of Control Sciences}, 2001.
+
+\bibitem[Chung(2004)]{Chung2004}
+Woojin Chung.
+\newblock {Introduction}.
+\newblock In \emph{Nonholonomic Manipulators}, chapter~1, pages 1--15.
+  Springer, Berlin, Heidelberg, 2004.
+\newblock ISBN 978-3-540-22108-1.
+\newblock \doi{https://doi-org.focus.lib.kth.se/10.1007/978-3-540-44425-1_1}.
+
+\bibitem[Cormen et~al.(2009)Cormen, Leiserson, RIvest, and Stein]{Cormen2009}
+Thomas~H. Cormen, Charles~E. Leiserson, Ronald~L. RIvest, and Clifford Stein.
+\newblock \emph{{Introduction to Algorithms}}.
+\newblock MIT Press, 3 edition, 2009.
+\newblock ISBN 9780262270830.
+
+\bibitem[Donald et~al.(1994)Donald, Xavier, Canny, and Reif]{Donald1993}
+Bruce Donald, Patrick Xavier, John Canny, and John Reif.
+\newblock {Kinodynamic motion planning}.
+\newblock \emph{Journal of the ACM}, 40\penalty0 (5):\penalty0 1048--1066,
+  1994.
+\newblock ISSN 00045411.
+\newblock \doi{10.1145/174147.174150}.
+
+\bibitem[Duncan et~al.(2013)Duncan, Sarkar, Alqasemi, and Dubey]{Duncan2013}
+Kester Duncan, Sudeep Sarkar, Redwan Alqasemi, and Rajiv Dubey.
+\newblock {Multi-scale superquadric fitting for efficient shape and pose
+  recovery of unknown objects}.
+\newblock \emph{Proceedings - IEEE International Conference on Robotics and
+  Automation}, pages 4238--4243, 2013.
+\newblock ISSN 10504729.
+\newblock \doi{10.1109/ICRA.2013.6631176}.
+
+\bibitem[Ericson(2004)]{Ericson2004}
+Christer Ericson.
+\newblock {The Gilbert-Johnson-Keerthi (GJK) Algorithm}, 2004.
+
+\bibitem[Fahimi(2007)]{Fahimi2007}
+F.~Fahimi.
+\newblock {Non-linear model predictive formation control for groups of
+  autonomous surface vessels}.
+\newblock \emph{International Journal of Control}, 80\penalty0 (8):\penalty0
+  1248--1259, 2007.
+\newblock ISSN 00207179.
+\newblock \doi{10.1080/00207170701280911}.
+
+\bibitem[Fantacci et~al.(2017)Fantacci, Vezzani, Pattacini, Tikhanoff, and
+  Natale]{Fantacci2017}
+Claudio Fantacci, Giulia Vezzani, Ugo Pattacini, Vadim Tikhanoff, and Lorenzo
+  Natale.
+\newblock {Markerless visual servoing on unknown objects for humanoid robot
+  platforms}.
+\newblock 2017.
+\newblock \doi{10.1109/ICRA.2018.8462914}.
+\newblock URL \url{http://arxiv.org/abs/1710.04465}.
+
+\bibitem[Gammell et~al.(2014)Gammell, Srinivasa, and Barfoot]{Gammell2014}
+Jonathan~D. Gammell, Siddhartha~S. Srinivasa, and Timothy~D. Barfoot.
+\newblock {Informed RRT*: Optimal sampling-based path planning focused via
+  direct sampling of an admissible ellipsoidal heuristic}.
+\newblock \emph{IEEE International Conference on Intelligent Robots and
+  Systems}, pages 2997--3004, 2014.
+\newblock ISSN 21530866.
+\newblock \doi{10.1109/IROS.2014.6942976}.
+
+\bibitem[Gilbert and Johnson(1987)]{Gilbert1987}
+E~Gilbert and D~Johnson.
+\newblock {A fast procedure for computing the distance between complex objects
+  in three space}.
+\newblock \emph{Robotics and Automation.}, 4\penalty0 (2), 1987.
+\newblock URL
+  \url{http://ieeexplore.ieee.org/xpls/abs{\_}all.jsp?arnumber=1087825}.
+
+\bibitem[Gilbert and Foo(1990)]{Gilbert1990}
+Elmer~G. Gilbert and Chek-Peng Foo.
+\newblock {Computing the Distance Between General Convex Objects in
+  Three-Dimensional Space}.
+\newblock \emph{IEEE Transactions on Robotics and Automation}, 6\penalty0
+  (1):\penalty0 53--61, 1990.
+
+\bibitem[Gilbert et~al.(1988)Gilbert, Johnson, and Keerthi]{Gilbert1988}
+Elmer~G. Gilbert, Daniel~W. Johnson, and S.~Sathiya Keerthi.
+\newblock {A Fast Procedure for Computing the Distance Between Complex Objects
+  in Three-Dimensional Space}, 1988.
+
+\bibitem[Gottschalk et~al.(1996)Gottschalk, Lin, and Manocha]{Gottschalk1996}
+S.~Gottschalk, M.~C. Lin, and D.~Manocha.
+\newblock {OBBTree: A Hierarchical Structure for Rapid Interference Detection}.
+\newblock 1996.
+\newblock ISSN 00084166.
+\newblock \doi{http://doi.acm.org/10.1145/237170.237244}.
+
+\bibitem[Guechi et~al.(2018)Guechi, Bouzoualegh, Zennir, and Blazi]{Guechi2018}
+El-Hadi Guechi, Samir Bouzoualegh, Youcef Zennir, and Saso Blazi.
+\newblock {MPC Control and LQ Optimal Control of A Two-Link Robot Arm : A
+  Comparative Study †}.
+\newblock pages 1--14, 2018.
+\newblock \doi{10.3390/machines6030037}.
+
+\bibitem[Hart et~al.(1968)Hart, Nilsson, and Raphael]{PeterE.HAR}
+Peter~E. Hart, Nils~J. Nilsson, and Bertram Raphael.
+\newblock {A Formal Basis for the Heuristic Determination of Minimum Cost
+  Paths}, 1968.
+
+\bibitem[Haverkort(2004)]{Haverkort2004}
+Herman~Johannes Haverkort.
+\newblock \emph{{Results on geometric networks and data structures}}.
+\newblock PhD thesis, Universiteit Utrecht, 2004.
+\newblock URL \url{http://dspace.library.uu.nl/handle/1874/892}.
+
+\bibitem[H.Barr(1981)]{H.Barr1981}
+Alan H.Barr.
+\newblock {Superquadrics and angle-preserving transformations}.
+\newblock \emph{IEEE Computer Graphics and Applications}, 1\penalty0
+  (1):\penalty0 11--23, 1981.
+
+\bibitem[Hirano et~al.(2005)Hirano, Kitahama, and Yoshizawa]{Hirano2005}
+Y~Hirano, K~Kitahama, and S~Yoshizawa.
+\newblock {Image-Based Object Recognition and Dextrous Hand/Arm Motion Planning
+  Using {\{}RRT{\}}s for Grasping in Cluttered Scene}.
+\newblock \emph{Proceedings IEEE/RSJ International Conference on Intelligent
+  Robots and Systems}, pages 2--7, 2005.
+
+\bibitem[Hoy et~al.(2012)Hoy, Matveev, Garratt, and Savkin]{Hoy2012}
+Michael Hoy, Alexey~S. Matveev, Matt Garratt, and Andrey~V. Savkin.
+\newblock {Collision-free navigation of an autonomous unmanned helicopter in
+  unknown urban environments: Sliding mode and MPC approaches}.
+\newblock \emph{Robotica}, 30\penalty0 (4):\penalty0 537--550, 2012.
+\newblock ISSN 02635747.
+\newblock \doi{10.1017/S0263574711000816}.
+
+\bibitem[Jaillet et~al.()Jaillet, Cort{\'{e}}s, and Sim{\'{e}}on]{Jaillet2008}
+L{\'{e}}onard Jaillet, Juan Cort{\'{e}}s, and Thierry Sim{\'{e}}on.
+\newblock {Transition-based RRT for Path Planning in Continuous Cost Spaces}.
+\newblock Technical Report Section II.
+\newblock URL
+  \url{http://www.leonardjaillet.com/Publications{\_}files/Iros08{\_}Jaillet{\_}TransitRRT.pdf}.
+
+\bibitem[Jakli{\v{c}} et~al.(2000)Jakli{\v{c}}, Leonardis, and
+  Solina]{Jaklic2000}
+Ale{\v{s}} Jakli{\v{c}}, Ale{\v{s}} Leonardis, and Franc Solina.
+\newblock \emph{{Segmentation and Recovery of Superquadrics}}, volume~20.
+\newblock Springer Science+Business Media Dordrecht, 2000.
+\newblock ISBN 978-90-481-5574-3.
+\newblock \doi{10.1007/978-94-015-9456-1}.
+\newblock URL \url{http://link.springer.com/10.1007/978-94-015-9456-1}.
+
+\bibitem[Karaman and Frazzoli(2010)]{Karaman2010}
+Sertac Karaman and Emilio Frazzoli.
+\newblock {Robotics: Science and Systems Incremental Sampling-based Algorithms
+  for Optimal Motion Planning}.
+\newblock In \emph{Robotics: Science and Systems}, 2010.
+\newblock URL \url{http://ares.lids.mit.edu/software.}
+
+\bibitem[Karaman and Frazzoli(2011)]{Karaman2011}
+Sertac Karaman and Emilio Frazzoli.
+\newblock {Sampling-based Algorithms for Optimal Motion Planning}.
+\newblock \emph{The International Journal of Robotics Research}, pages
+  846--849, 2011.
+\newblock \doi{10.1177/0278364911406761}.
+
+\bibitem[Karamanakos et~al.(2016)Karamanakos, Geyer, Member, Kennel, and
+  Member]{Karamanakos2016}
+Petros Karamanakos, Tobias Geyer, Senior Member, Ralph Kennel, and Senior
+  Member.
+\newblock {A Computationally Efficient Model Predictive Control Strategy for
+  Linear Systems With Integer Inputs}.
+\newblock \penalty0 (1), 2016.
+
+\bibitem[Katsoulas(2003)]{Katsoulas2003}
+Katsoulas.
+\newblock {Reliable recovery of piled box-like objects via parabolically
+  deformable superquadrics}, 2003.
+\newblock URL \url{http://ieeexplore.ieee.org/document/1238448/}.
+
+\bibitem[Kavraki et~al.(1998)Kavraki, Kolountzakis, and Latombe]{Kavraki1998}
+Lydia~E Kavraki, Mihail~N. Kolountzakis, and Jean-Claude Latombe.
+\newblock {Analysis Of Probabilistic Roadmaps For Path Planning - Robotics and
+  Automation}.
+\newblock \emph{IEEE Transactions on Robotics and automation}, 14\penalty0
+  (1):\penalty0 9--12, 1998.
+
+\bibitem[Khatib(1980)]{Khatib1980}
+Oussama Khatib.
+\newblock \emph{{Commande dynamique dans l'espace op{\'{e}}rationnel des robots
+  manipulateurs en pr{\'{e}}sence d'obstacles.}}
+\newblock PhD thesis, Toulouse, France, 1980.
+
+\bibitem[Khatib(1986)]{Khatib}
+Oussama Khatib.
+\newblock {Real-Time Obstacle Avoidance for Manipulators and Mobile Robots}.
+\newblock \emph{The Intenrational Journal of Robotics Research}, 5\penalty0
+  (1), 1986.
+
+\bibitem[Kindlmann(2004)]{Kindlmann2004}
+Gordon Kindlmann.
+\newblock {Superquadric Tensor Glyphs}.
+\newblock \emph{Joint Eurographics - IEEE TCVG Symposium on Visualization},
+  pages 1--8, 2004.
+\newblock \doi{10.2312/VisSym/VisSym04/147-154}.
+
+\bibitem[Kirby et~al.(2009)Kirby, Simmons, and Forlizzi]{Kirby2009}
+Rachel Kirby, Reid Simmons, and Jodi Forlizzi.
+\newblock {Variable sized grid cells for rapid replanning in dynamic
+  environments}.
+\newblock \emph{2009 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems, IROS 2009}, pages 4913--4918, 2009.
+\newblock \doi{10.1109/IROS.2009.5354352}.
+
+\bibitem[Klanke et~al.(2006)Klanke, Lebedev, Haschke, Steil, and
+  Ritter]{Klanke2006}
+Stefan Klanke, Dmitry Lebedev, Robert Haschke, Jochen Steil, and Helge Ritter.
+\newblock {Dynamic path planning for a 7-DOF robot arm}.
+\newblock \emph{IEEE International Conference on Intelligent Robots and
+  Systems}, \penalty0 (November):\penalty0 3879--3884, 2006.
+\newblock ISSN 0014-4819.
+\newblock \doi{10.1109/IROS.2006.281798}.
+
+\bibitem[Kuffner and LaValle(2002)]{Kuffner2002}
+J.J. Kuffner and S.M. LaValle.
+\newblock {RRT-connect: An efficient approach to single-query path planning}.
+\newblock \emph{Proceedings - IEEE International Conference on Robotics and
+  Automation}, \penalty0 (Icra):\penalty0 995--1001, 2002.
+\newblock ISSN 1050-4729.
+\newblock \doi{10.1109/robot.2000.844730}.
+
+\bibitem[Lahouar et~al.(2006)Lahouar, Said, Romdhane, Free, and
+  Planning]{Lahouar2006}
+Samir Lahouar, Zeghloul Said, Lotfi Romdhane, Collision Free, and Path
+  Planning.
+\newblock \emph{{Collision Free Path Planning for Multi-DoF Manipulators}}.
+\newblock Number December. 2006.
+\newblock ISBN 3866112858.
+\newblock \doi{10.1177/0146167204271659}.
+
+\bibitem[LaValle(2006)]{LaValle2006}
+Steven~M. LaValle.
+\newblock \emph{{Planning algorithms}}, volume 9780521862.
+\newblock 2006.
+\newblock ISBN 9780511546877.
+\newblock \doi{10.1017/CBO9780511546877}.
+\newblock URL \url{http://ebooks.cambridge.org/ref/id/CBO9780511546877}.
+
+\bibitem[LaValle(1998)]{LaValle1998}
+Steven M. (Iowa State~University) LaValle.
+\newblock {Rapidly-Exploring Random Trees: A New Tool for Path Planning}.
+\newblock 1998.
+
+\bibitem[Lee et~al.(2015)Lee, Baek, and Kim]{Lee}
+Seung-jae Lee, Seung-hwan Baek, and Jong-hwan Kim.
+\newblock {Arm Trajectory Generation based on RRT * for Humanoid Robot}.
+\newblock \emph{Advances in Intelligent Systems and Computing book series (},
+  45, 2015.
+
+\bibitem[Lindemann(2009)]{Lindemann2009}
+Patrick Lindemann.
+\newblock {The Gilbert-Johnson-Keerthi Distance Algorithm}.
+\newblock \emph{Algorithms in Media Informatics}, 2009.
+\newblock URL
+  \url{http://www.medien.ifi.lmu.de/lehre/ss10/ps/Ausarbeitung{\_}Beispiel.pdf}.
+
+\bibitem[Lindemann and LaValle(2005)]{Lindemann2005}
+Stephen~R. Lindemann and Steven~M. LaValle.
+\newblock {Current Issues in Sampling-Based Motion Planning}.
+\newblock pages 36--54, 2005.
+\newblock ISSN 16107438.
+\newblock \doi{10.1007/11008941_5}.
+\newblock URL \url{http://link.springer.com/10.1007/11008941{\_}5}.
+
+\bibitem[Link et~al.(2009)Link, Kuwata, Teo, Member, Fiore, Member, How, and
+  Member]{Link2009}
+Citable Link, Yoshiaki Kuwata, Justin Teo, Student Member, Gaston Fiore,
+  Student Member, Jonathan~P How, and Senior Member.
+\newblock {Real-Time Motion Planning With Applications to Autonomous Urban
+  Driving}.
+\newblock \emph{IEEE Transactions on Control Systems Technology}, 17\penalty0
+  (5):\penalty0 1105--1118, 2009.
+
+\bibitem[Lozano-Perez(1983)]{Lozano-perez1983}
+Tomas Lozano-Perez.
+\newblock {Spatial Planning : A Configuration Space Approach}.
+\newblock \emph{IEEE Transactions on Computers}, c-32\penalty0 (2), 1983.
+
+\bibitem[Manyika et~al.(2017)Manyika, Lund, Chui, Bughin, Woetzel, Batra, Ko,
+  and Sanghvi]{Manyika2017}
+James Manyika, Susan Lund, Michael Chui, Jacques Bughin, Jonathan Woetzel,
+  Parul Batra, Ryan Ko, and Saurabh Sanghvi.
+\newblock {Jobs lost, jobs gained: What the future of work will mean for jobs,
+  skills, and wages}.
+\newblock Technical report, McKinsey Global Institute, 2017.
+
+\bibitem[Marzat et~al.(2017)Marzat, Bertrand, Eudes, Sanfourche, and
+  Moras]{Marzat2017}
+Julien Marzat, Sylvain Bertrand, Alexandre Eudes, Martial Sanfourche, and
+  Julien Moras.
+\newblock {Reactive MPC for Autonomous MAV Navigation in Indoor Cluttered
+  Environments: Flight Experiments}.
+\newblock \emph{IFAC-PapersOnLine}, 50\penalty0 (1):\penalty0 15996--16002,
+  2017.
+\newblock ISSN 24058963.
+\newblock \doi{10.1016/j.ifacol.2017.08.1910}.
+
+\bibitem[Oliphant(2006)]{TravisE2006}
+Travis~E. Oliphant.
+\newblock \emph{{A guide to NumPy}}.
+\newblock Trelgol Publishing, 2006.
+
+\bibitem[Park(2015)]{Park2015}
+Chanhun Park.
+\newblock {Self-Collision Detection {\&} Avoidance Algorithm for a Robot
+  Manipulator}.
+\newblock \emph{Internation Journal of Engineering and Innovation Technology},
+  5\penalty0 (4):\penalty0 139--142, 2015.
+\newblock ISSN 2226809X.
+
+\bibitem[Park et~al.(2009)Park, Kim, Yoon, Kim, and Yi]{Park2009}
+J.~M. Park, D.~W. Kim, Y.~S. Yoon, H.~J. Kim, and K.~S. Yi.
+\newblock {Obstacle avoidance of autonomous vehicles based on model predictive
+  control}.
+\newblock \emph{Proceedings of the Institution of Mechanical Engineers, Part D:
+  Journal of Automobile Engineering}, 223\penalty0 (12):\penalty0 1499--1516,
+  2009.
+\newblock ISSN 09544070.
+\newblock \doi{10.1243/09544070JAUTO1149}.
+
+\bibitem[Pascoal et~al.(2015)Pascoal, Santos, Premebida, and
+  Nunes]{Pascoal2015}
+Ricardo Pascoal, Vitor Santos, Cristiano Premebida, and Urbano Nunes.
+\newblock {Simultaneous segmentation and superquadrics fitting in laser-range
+  data}.
+\newblock \emph{IEEE Transactions on Vehicular Technology}, 64\penalty0
+  (2):\penalty0 441--452, 2015.
+\newblock ISSN 00189545.
+\newblock \doi{10.1109/TVT.2014.2321899}.
+
+\bibitem[Rawlings and Mayne(2012)]{Rawlings2012}
+J.~B. Rawlings and D.~Q. Mayne.
+\newblock \emph{{Model Predictive Control: Theory and Design}}.
+\newblock Nob Hill Publishing, Madison, Wisconsin, 2 edition, 2012.
+\newblock ISBN 978-0-9759377-3-0.
+
+\bibitem[Razi and Haeri(2014)]{Razi2014}
+M~Razi and M~Haeri.
+\newblock {Design of a robust model predictive controller with reduced
+  computational complexity}.
+\newblock \emph{ISA Transactions}, 53\penalty0 (6):\penalty0 1754--1759, 2014.
+\newblock ISSN 0019-0578.
+\newblock \doi{10.1016/j.isatra.2014.09.008}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.isatra.2014.09.008}.
+
+\bibitem[Reif(1985)]{Reif1985}
+John~H. Reif.
+\newblock {Complexity of the Generalized Mover's Problem}.
+\newblock Technical report, Harvard University, Cambridige, MA, 1985.
+
+\bibitem[Richter and Morari(2010)]{Richter2010}
+Stefan Richter and Manfred Morari.
+\newblock {High-Speed Online MPC Based on a Fast Gradient Method Applied to
+  Power Converter Control}.
+\newblock \emph{American Control Conference}, pages 4737--4743, 2010.
+
+\bibitem[Richter et~al.(2012)Richter, Jones, and Morari]{Richter2012}
+Stefan Richter, Colin~Neil Jones, and Manfred Morari.
+\newblock {Computational Complexity Certification for Real-Time MPC With Input
+  Constraints Based on the Fast Gradient Method}.
+\newblock \emph{IEEE Transactions on Automatic Control}, 57\penalty0
+  (6):\penalty0 1391--1403, 2012.
+\newblock \doi{10.1109/TAC.2011.2176389}.
+
+\bibitem[Rossing et~al.(1997)Rossing, Hogewerf, IPEMA, Lauwere, and
+  Koning]{Rossing1997}
+W~Rossing, P.~H. Hogewerf, A.H. IPEMA, C.C. Ketelaar-De Lauwere, and
+  C.J.A.M.~De Koning.
+\newblock {Robotic Milking in Diary Farming}.
+\newblock \emph{Netherlands JNournal of Agricutlral Science}, 45:\penalty0
+  15--31, 1997.
+
+\bibitem[Rovn{\'{y}} and Belda(2017)]{Rovny2017}
+Oliver Rovn{\'{y}} and Kvetoslav Belda.
+\newblock {Predictive Control of 5 DOF Robot Arm of Autonomous Mobile Robotic
+  System}.
+\newblock pages 339--344, 2017.
+\newblock \doi{10.1109/PC.2017.7976237}.
+
+\bibitem[Sasane and Svanberg(2016)]{Sasane2016}
+Amol Sasane and Krister Svanberg.
+\newblock \emph{{Optimization}}.
+\newblock Department of Mathematics, Royal Institute of Technology, 2016.
+
+\bibitem[Shahzad and Kerrigan(2008)]{Shahzad2008}
+Amir Shahzad and Eric~C Kerrigan.
+\newblock {A Warm-start Interior-point Method for Predictive Control}.
+\newblock 2008.
+
+\bibitem[Siciliano and Khatib(2016)]{Siciliano2016}
+Bruno Siciliano and Oussama Khatib.
+\newblock \emph{{Springer Handbook of Robotics}}, volume~46.
+\newblock Springer, 2nd edition, 2016.
+\newblock ISBN 978-3-319-32550-7.
+\newblock \doi{10.1007/978-3-319-32552-1}.
+
+\bibitem[Silva et~al.(2016)Silva, Costa, Erlhagen, and Bicho]{Silva2016}
+Eliana Costa~E. Silva, M.~Fernanda Costa, Wolfram Erlhagen, and Estela Bicho.
+\newblock {Superquadrics objects representation for robot manipulation}.
+\newblock \emph{AIP Conference Proceedings}, 1738\penalty0 (1), 2016.
+\newblock ISSN 15517616.
+\newblock \doi{10.1063/1.4952096}.
+
+\bibitem[Snyder and Qi(2010)]{Snyder2010}
+Wesley~E. Snyder and Hairong Qi.
+\newblock \emph{{Machine Vision}}.
+\newblock Cambridge University Press, 2010.
+\newblock ISBN 9780511988578.
+
+\bibitem[Spong and Vidyasagar(2004)]{Spong2004}
+Mark~W. Spong and M.~Vidyasagar.
+\newblock \emph{{Robot Dynamics and Control}}.
+\newblock Wiley India Pvt. Limited, 2nd edition, 2004.
+\newblock ISBN 9788126517800.
+
+\bibitem[Tahir et~al.(2018)Tahir, Qureshi, Ayaz, and Nawaz]{Tahir2018}
+Zaid Tahir, Ahmed~H. Qureshi, Yasar Ayaz, and Raheel Nawaz.
+\newblock {Potentially guided bidirectionalized RRT* for fast optimal path
+  planning in cluttered environments}.
+\newblock \emph{Robotics and Autonomous Systems}, 108:\penalty0 13--27, 2018.
+\newblock ISSN 09218890.
+\newblock \doi{10.1016/j.robot.2018.06.013}.
+
+\bibitem[Terry et~al.(2017)Terry, Rupert, and Killpack]{Terry2017}
+Jonathan~S Terry, Levi Rupert, and Marc~D Killpack.
+\newblock {Comparison of Linearized Dynamic Robot Manipulator Models for Model
+  Predictive Control}.
+\newblock 2017.
+
+\bibitem[Tzovaras and Strintzis(2007)]{Tzovaras2007a}
+Dimitrios Tzovaras and Michael~Gerassimos Strintzis.
+\newblock {SQ-map: Efficient layered collision detection and haptic rendering}.
+\newblock \emph{IEEE Transactions on Visualization and Computer Graphics},
+  13\penalty0 (1):\penalty0 80--93, 2007.
+\newblock ISSN 10772626.
+\newblock \doi{10.1109/TVCG.2007.20}.
+
+\bibitem[Urmson and Simmons(2004)]{Urmson2004}
+C.~Urmson and R.~Simmons.
+\newblock {Approaches for heuristically biasing RRT growth}.
+\newblock \emph{IEEE/RSJ International Conference on Intelligent Robots and
+  Systems (IROS)}, \penalty0 (October):\penalty0 1178--1183, 2004.
+\newblock \doi{10.1109/iros.2003.1248805}.
+
+\bibitem[{Van Den Bergen}(1998)]{VanDenBergen1998}
+Gino {Van Den Bergen}.
+\newblock {Efficient Collision Detection of Complex Deformable Models using
+  AABB Trees}.
+\newblock pages 1--14, 1998.
+
+\bibitem[{Van Den Bergen}(1999)]{VanDenBergen1999}
+Gino {Van Den Bergen}.
+\newblock {A Fast and Robust GJK Implementation for Collision Detection of
+  Convex Objects}.
+\newblock \emph{Journal of Graphics Tools}, 4\penalty0 (2):\penalty0 7--25,
+  1999.
+\newblock ISSN 1086-7651.
+\newblock \doi{10.1080/10867651.1999.10487502}.
+
+\bibitem[van~der Walt et~al.(2011)van~der Walt, {S. Colbert}, and
+  Varoquaux]{VanderWalt2011}
+St{\'{e}}fan van~der Walt, Chris {S. Colbert}, and Ga{\"{e}}l Varoquaux.
+\newblock {The NumPy Array: A Structure for Efficient Numerical Computation}.
+\newblock \emph{Computing in Science {\&} Engineering}, 13\penalty0
+  (22):\penalty0 22--30, 2011.
+
+\bibitem[Vezzani et~al.(2018)Vezzani, Pattacini, Pasquale, and
+  Natale]{Vezzani2018}
+Giulia Vezzani, Ugo Pattacini, Giulia Pasquale, and Lorenzo Natale.
+\newblock {Improving Superquadric Modeling and Grasping with Prior on Object
+  Shapes}.
+\newblock pages 6875--6882, 2018.
+\newblock ISSN 1549-7747.
+\newblock \doi{10.1109/ICRA.2017.7989187}.
+
+\bibitem[Volpe et~al.(1990)Volpe, on~Systems, Man, And, and 1990]{Volpe1990}
+R~Volpe, P~Khosla IEEE~Transactions on~Systems, Undefined Man, Undefined And,
+  and Undefined 1990.
+\newblock {Manipulator control with superquadric artificial potential
+  functions: Theory and experiments}.
+\newblock \emph{Ieeexplore.Ieee.Org}, 1990.
+\newblock URL \url{https://ieeexplore.ieee.org/abstract/document/61211/}.
+
+\bibitem[Wang(2009)]{Wang2009a}
+Liuping Wang.
+\newblock \emph{{Model Predictive Control System Design and Implementation
+  Using MATLAB}}.
+\newblock Springer, 2009.
+\newblock ISBN 978-1-84882-330-3 978-1-84882-331-0.
+\newblock \doi{10.1007/978-1-84882-331-0}.
+
+\bibitem[Warren(1989)]{Warren1989}
+Charles~W. Warren.
+\newblock {Global Path Planning Using Artificial Potential FIelds}, 1989.
+
+\bibitem[Webb and van~den Berg(2012)]{Webb2012}
+Dustin~J. Webb and Jur van~den Berg.
+\newblock {Kinodynamic RRT*: Optimal Motion Planning for Systems with Linear
+  Differential Constraints}.
+\newblock Technical report, 2012.
+\newblock URL \url{http://arxiv.org/abs/1205.5088}.
+
+\bibitem[Wilson(2014)]{978-1-4799-4992-2/14}
+Richard~L. Wilson.
+\newblock {Ethical issues with use of Drone aircraft}.
+\newblock Technical report, 2014.
+
+\bibitem[Yerry and Shephard(1985)]{Yerry1985}
+Mark~A. Yerry and Mark~S. Shephard.
+\newblock {Automatic mesh generation for three-dimensional solids}.
+\newblock \emph{Computers and Structures}, 20\penalty0 (1-3):\penalty0 31--39,
+  1985.
+\newblock ISSN 00457949.
+\newblock \doi{10.1016/0045-7949(85)90050-1}.
+
+\bibitem[Yoon et~al.(2008)Yoon, Choe, Park, and Kim]{Yoon2008a}
+Yongsoon Yoon, Tokson Choe, Yongwoon Park, and H.~Jin Kim.
+\newblock \emph{{Obstacle avoidance for wheeled robots in unknown environments
+  using model predictive control}}, volume~17.
+\newblock IFAC, 2008.
+\newblock ISBN 9783902661005.
+\newblock \doi{10.3182/20080706-5-KR-1001.1873}.
+\newblock URL \url{http://dx.doi.org/10.3182/20080706-5-KR-1001.01151}.
+
+\bibitem[Zeghloul et~al.(1997)Zeghloul, Blanchard, and Ayrault]{Zeghloul1997}
+S~Zeghloul, B~Blanchard, and M~Ayrault.
+\newblock {SMAR : A Robot Modeling and Simulation System}.
+\newblock \emph{Robotica}, 15\penalty0 (1997):\penalty0 63--73, 1997.
+
+\end{thebibliography}

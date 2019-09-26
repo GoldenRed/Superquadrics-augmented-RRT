@@ -1,0 +1,52 @@
+
+\usetikzlibrary{shapes,fit}
+\begin{tikzpicture}%[node distance = 3cm, auto,scale=0.85, every node/.style={scale=0.85}]
+% Place nodes
+\centering
+
+\begin{scope}[every node/.style={circle,thick,draw}]
+\node [shape=circle, draw=black] (A) at (0,0) {A $9.1$};
+\node [shape=circle, draw=black] (B) at (5,2) {B $4.1$};
+\node [shape=circle, draw=black] (C) at (5,0) {C $4.1$};
+\node [shape=circle, draw=black] (D) at (5,-2) {D $5.0$};
+\node [shape=circle, draw=black] (E) at (9, 3) {E $2.0$};
+\node [shape=circle, draw=black] (F) at (9, 1) {F $0.0$};
+\node [shape=circle, draw=black] (G) at (9, -1) {G $2.0$};
+\node [shape=circle, draw=black] (H) at (9, -3) {H $4.0$};
+\end{scope}
+
+% Draw edges
+%\path [line] (BG) -- (RQ);
+%\path [line] (A) -- (B);
+%\path [line] (A) -- (C);
+%\path [line] (B) -- (C);
+\begin{scope}[>={Stealth[black]},
+	every node/.style={fill=white,circle},
+	every edge/.style={draw=red,very thick}]
+\path [->] (A) edge (B);
+\path [->] (A) edge (C);
+\path [->] (B) edge (C);
+\path [->] (A) edge (D);
+\path [->] (B) edge[bend right=60] (A);
+\path [->] (E) edge[bend right=80] (A);
+\path [->] (C) edge (D);
+\path [->] (D) edge (H);
+\path [->] (C) edge (F);
+\path [->] (C) edge (H);
+\path [->] (B) edge (E);
+\path [->] (B) edge (F);
+\path [->] (B) edge (H);
+\path [->] (H) edge (G);
+\path [->] (A) edge[bend right=40] (H);
+\path [->] (E) edge[bend left=60] (H);
+\path [->] (F) edge (G);
+\path [->] (G) edge[bend right=45] (E);
+\path [->] (E) edge[bend right=60] (B); 
+\end{scope}
+
+
+
+%\path [line] (SQ.east) --([shift={(5mm,0mm)}]SQ.east)--node[anchor=south] {} ([shift={(5mm,0mm)}]gather.east) -- (gather.east);
+
+\end{tikzpicture}
+

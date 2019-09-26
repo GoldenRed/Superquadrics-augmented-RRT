@@ -1,0 +1,82 @@
+This is BibTeX, Version 0.99d (TeX Live 2018/W32TeX)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: plainnat.bst
+A level-1 auxiliary file: frontmatter.aux
+A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: theoreticalframework.aux
+A level-1 auxiliary file: method.aux
+A level-1 auxiliary file: results.aux
+A level-1 auxiliary file: discussion.aux
+A level-1 auxiliary file: backmatter.aux
+Database file #1: library.bib
+Warning--there's a number but no volume in Biegelbauer2007
+Warning--empty journal in Cameron2002
+Warning--there's a number but no volume in Cameron2002
+Warning--empty journal in Fantacci2017
+Warning--empty journal in Gottschalk1996
+Warning--empty journal in Guechi2018
+Warning--empty institution in Jaillet2008
+Warning--empty year in Jaillet2008
+Warning--empty year in Jaillet2008
+Warning--empty journal in Karamanakos2016
+Warning--there's a number but no volume in Karamanakos2016
+Warning--there's a number but no volume in Klanke2006
+Warning--there's a number but no volume in Kuffner2002
+Warning--there's a number but no series in Lahouar2006
+Warning--empty publisher in Lahouar2006
+Warning--empty publisher in LaValle2006
+Warning--empty journal in LaValle1998
+Warning--empty journal in Lindemann2005
+Warning--empty journal in Rovny2017
+Warning--empty journal in Shahzad2008
+Warning--can't use both volume and number fields in Siciliano2016
+Warning--empty journal in Terry2017
+Warning--there's a number but no volume in Urmson2004
+Warning--empty journal in VanDenBergen1998
+Warning--empty journal in Vezzani2018
+Warning--empty institution in Webb2012
+Warning--empty institution in 978-1-4799-4992-2/14
+Warning--can't use both volume and number fields in Yoon2008a
+You've used 83 entries,
+            2773 wiz_defined-function locations,
+            1224 strings with 21683 characters,
+and the built_in function-call counts, 38415 in all, are:
+= -- 3551
+> -- 2174
+< -- 66
++ -- 740
+- -- 657
+* -- 3090
+:= -- 6004
+add.period$ -- 335
+call.type$ -- 83
+change.case$ -- 462
+chr.to.int$ -- 83
+cite$ -- 194
+duplicate$ -- 1743
+empty$ -- 2987
+format.name$ -- 784
+if$ -- 8022
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 83
+newline$ -- 507
+num.names$ -- 332
+pop$ -- 873
+preamble$ -- 1
+purify$ -- 385
+quote$ -- 0
+skip$ -- 1379
+stack$ -- 0
+substring$ -- 1229
+swap$ -- 189
+text.length$ -- 21
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 848
+warning$ -- 28
+while$ -- 343
+width$ -- 0
+write$ -- 1220
+(There were 28 warnings)

@@ -1,0 +1,114 @@
+%% Macros from Ludvig M, who gave it to Rickard S, who gave it to Yared EA
+%\usepackage{preamble/macros}
+
+%% Paper settings
+\usepackage[final]{microtype}
+\emergencystretch=1em
+
+%% Biblatex-related
+\usepackage{csquotes}
+%\usepackage[bibstyle=ieee, citestyle=numeric-comp,  sorting=none, url=false, doi=false, isbn=false]{biblatex}
+
+
+%% \includepdf
+\usepackage[final]{pdfpages}
+
+%Parskip
+\usepackage[parfill]{parskip}
+
+%% Hyperlinks
+\usepackage[hidelinks]{hyperref}
+
+%% url
+\urlstyle{same}
+
+%% \subincludefrom
+\usepackage{import}
+
+%% Glossaries and nomenclature
+\usepackage[acronyms,nonumberlist,nopostdot,sanitizesort=true,nogroupskip,toc]{glossaries}
+\usepackage{acronym}
+\usepackage{glossary-mcols}
+\setglossarystyle{list}
+\makenoidxglossaries
+\usepackage[intoc]{nomencl}
+\makenomenclature
+
+%% For Abstract
+\usepackage{tabularx}
+\usepackage{adjustbox}
+\usepackage{collectbox}
+
+%% For images & plots
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{tikz}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{shapes,arrows,calc}
+\tikzstyle{block} = [rectangle, draw,
+text width=5em, text centered, minimum height=4em]
+\tikzstyle{smallblock} = [rectangle, draw, text width = 2em, text centered, minimum height=3em]
+\tikzstyle{line} = [draw, -latex']
+% flowcharts
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=2cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{emptybox} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=none]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+% Own colors for tikz
+\definecolor{light-green}{RGB}{226,239,218}
+\definecolor{light-blue}{RGB}{221,235,247}
+\definecolor{light-yellow}{RGB}{255,242,204}
+\definecolor{light-orange}{RGB}{252,228,214}
+\usetikzlibrary{arrows.meta}
+
+
+%% math
+\usepackage{amsmath, amssymb}
+\usepackage{mathtools}
+
+\let\oldnorm\norm   % <-- Store original \norm as \oldnorm
+\let\norm\undefined % <-- "Undefine" \norm
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}
+
+% tabletext
+\usepackage[font=scriptsize,labelfont=bf]{caption}
+\captionsetup[table]{skip=10pt}
+\usepackage{multirow}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%Yareds:
+\usepackage{xcolor}
+\usepackage{enumerate}
+%\usepackage{cite}
+\usepackage[round]{natbib} 
+\bibliographystyle{plainnat}%{unsrt}
+
+%for code:
+\usepackage{listings} %For code
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+%for graphics
+\usepackage{dirtree}
+
+%Setting, to punish single sentences on one page
+\widowpenalty=10000
+\clubpenalty=10000

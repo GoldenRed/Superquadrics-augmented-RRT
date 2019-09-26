@@ -1,0 +1,79 @@
+%!TEX root = ../main.tex
+
+%\documentclass{article}
+%\usepackage[utf8]{inputenc}
+
+%\title{Yared Master Tehsis}
+%\author{yared94 }
+%\date{January 2019}
+
+%\begin{document}
+
+%\maketitle
+
+%\section{Introduction}
+
+%\end{document}
+
+% -------------------------------------------------- %
+%   Load packages, metadata, etc.                    %
+% -------------------------------------------------- %
+\documentclass{kththesis}
+\input{preamble/packages}
+\input{preamble/metadata}
+
+% -------------------------------------------------- %
+%   Glossary and acronyms                            %
+% -------------------------------------------------- %
+% Add more here.
+\loadglsentries{preamble/acronyms}
+\loadglsentries{preamble/glossary}
+
+% -------------------------------------------------- %
+%   Bibliography resources                           %
+% -------------------------------------------------- %
+%\addbibresource{library.bib}
+%\AtEveryBibitem{\clearfield{note}}
+%\renewbibmacro*{bbx:savehash}{}
+
+\begin{document}
+
+%När jag genererat filen: 
+\includepdf[pages=1]{preamble/kth-cover.pdf}
+\cleardoublepage
+
+% -------------------------------------------------- %
+%   Front matter; cover pages, abstract, toc, etc.   %
+% -------------------------------------------------- %
+\frontmatter
+\subincludefrom{frontmatter/}{frontmatter}
+
+% ---------------------------- ---------------------- %
+%   Mainmatter; actual report contents               %
+% -------------------------------------------------- %
+\mainmatter
+\subincludefrom{mainmatter/chapter1/}{introduction}
+\subincludefrom{mainmatter/chapter2/}{theoreticalframework}
+\subincludefrom{mainmatter/chapter3/}{method}
+\subincludefrom{mainmatter/chapter4/}{results}
+\subincludefrom{mainmatter/chapter5/}{discussion}
+
+%%\subimport{mainmatter/chapter1/}{introduction}
+%%\subimport{mainmatter/chapter2/}{theoreticalframework}
+%%\subimport{mainmatter/chapter3/}{method}
+%%\subimport{mainmatter/chapter4/}{results}
+%%\subimport{mainmatter/chapter5/}{discussion}
+
+
+% -------------------------------------------------- %
+%   Backmatter; references, appendices, cover pages  %
+% -------------------------------------------------- %
+\subincludefrom{backmatter/}{backmatter}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+%När jag genererat filen: 
+\includepdf[pages=2]{preamble/kth-cover.pdf}
+
+\end{document}

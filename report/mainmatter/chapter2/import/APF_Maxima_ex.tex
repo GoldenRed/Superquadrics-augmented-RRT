@@ -1,0 +1,21 @@
+
+\pgfplotsset{width=7cm,compat=1.16}
+
+\begin{tikzpicture} 
+	\begin{axis}[ 
+		title={Repulsor field}, 
+		domain=-4:4, 
+		view={0}{90}, 
+		axis background/.style={fill=white}, 
+	] 
+
+		\addplot3[blue, 
+			quiver={ 
+				u={x*abs(x)^0.5}, 
+				v={y*abs(y)^0.5}, 
+				scale arrows=0.1, 
+			}, 
+			-stealth,samples=12] 
+				{0}; 
+	\end{axis} 
+\end{tikzpicture}

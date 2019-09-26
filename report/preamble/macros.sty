@@ -1,0 +1,47 @@
+%   Original Template author: Ludvig Michaelsson
+%   Contact information: ludvig.michaelsson@gmail.com
+
+\ProvidesPackage{preamble/macros}
+
+% ------------------------------------------------------- %
+%      Macro for defining symbols
+% ------------------------------------------------------- %
+
+\newcommand{\newnomenclentry}[3]{%
+	\newglossaryentry{#1}{type=symbols,%
+		name={#2},%
+		symbol={},%
+		description={#3}}%
+}
+
+\newcommand*{\newdualentry}[5][]{%
+	\newglossaryentry{main-#2}{name={#4},%
+		text={#3\glsadd{#2}},%
+		description={#5},%
+		#1
+	}%
+	\newacronym{#2}{#3\glsadd{main-#2}}{#4}%
+}
+
+\newglossarystyle{thesismcolindex}{%
+	\setglossarystyle{index}%
+	\renewenvironment{theglossary}%
+	{%
+		\begin{multicols*}{2}
+			\setlength{\parindent}{0pt}%
+			\setlength{\parskip}{0pt plus 0.3pt}%
+			\let\item\@idxitem}%
+		{\end{multicols*}%
+	}%
+}
+
+\newglossarystyle{thesismcolalttree}{%
+	\setglossarystyle{alttree}%
+	\renewenvironment{theglossary}%
+	{%
+		\begin{multicols*}{\glsmcols}
+			\def\@gls@prevlevel{-1}%
+			\mbox{}\par
+		}%
+		{\par\end{multicols*}}%
+}

@@ -1,0 +1,44 @@
+\babel@toc {english}{}
+\babel@toc {swedish}{}
+\babel@toc {english}{}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Chart illustrating the workflow and temporal dependencies. Blue boxes represent work resulting in report substance. Red boxes represent work resulting in executable code. Dashed represents a qualitative analysis.\relax }}{6}{figure.caption.6}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces \textbf {Source}: Images from Wikicommons released into the public domain.\relax }}{8}{figure.caption.7}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Three nodes $n_A$, $n_B$ and $n_C$ in a graph and the costs of traversing their arcs.\relax }}{12}{figure.caption.8}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces A graph with arc costs.\relax }}{13}{figure.caption.9}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces A variant on Figure \ref {fig:admis_ex} with approximate Euclidean distance to goal node $n_F$ as a heuristic cost.\relax }}{14}{figure.caption.10}% 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces The same environment, represented with two grids of different resolutions, 1 cm and 0.2 cm step size respectively. Red represents the start state, green the goal state and black obstacles. The gray outline is used as a visual aid.\relax }}{16}{figure.caption.11}% 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces A potential field function. \textbf {Source}: [\citeauthor {Warren1989}].\relax }}{19}{figure.caption.12}% 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Two vector fields.\relax }}{20}{figure.caption.14}% 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces The RRT algorithm shown expanding in a uniformly random manner. This implementation lacks a goal state. \textbf {Source}: [\citeauthor {Cheng2001}].\relax }}{29}{figure.caption.19}% 
+\contentsline {figure}{\numberline {2.9}{\ignorespaces If the $\textbf {p}_{new}$ is in an obstacle region ($\mathcal {C}_{obs}$) it could propose a $\textbf {p}_s$. \textbf {Source}: [\citeauthor {LaValle2006}] with modifications.\relax }}{30}{figure.caption.21}% 
+\contentsline {figure}{\numberline {2.10}{\ignorespaces A 5D RRT for a kinodynamic car, that has been projected down to two dimensions. \textbf {Source}: [\citeauthor {LaValle1998}].\relax }}{31}{figure.caption.23}% 
+\contentsline {figure}{\numberline {2.11}{\ignorespaces The Voronoi regions associated with each uniformly sampled point from Figure \ref {fig:RRT_treeVanilla}. \textbf {Source}: [\citeauthor {Cheng2001}].\relax }}{32}{figure.caption.25}% 
+\contentsline {figure}{\numberline {2.12}{\ignorespaces The RRT-connect algorithm. Trees expand from the start and goal node, impeded by the red obstacle regions. \textbf {Source}: [\citeauthor {Kuffner2002}].\relax }}{33}{figure.caption.26}% 
+\contentsline {figure}{\numberline {2.13}{\ignorespaces A comparison between RRT* and Informed RRT*. \textbf {Source}: [\citeauthor {Gammell2014}].\relax }}{34}{figure.caption.28}% 
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Two OBB $A$ and $B$, along with a separating axis $\textbf {L}$. \textbf {Source}: [\citeauthor {Gottschalk1996}].\relax }}{37}{figure.caption.31}% 
+\contentsline {figure}{\numberline {2.15}{\ignorespaces A bounding volume hierarchy organizing objects into a tree structure. Two characters inhabit the world, with an anatomy defined in the tree nodes. Dashes are used for brevity, to avoid having to list all child nodes at each level.\relax }}{38}{figure.caption.33}% 
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Minkowski difference being taken on sets $\mathcal {K}_A$ and $\mathcal {K}_B$ resulting in $\mathcal {K}_C$.\relax }}{40}{figure.caption.36}% 
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Four iterations of the GJK algorithm. Note that the origin is not part of the set. \textbf {Source}: [\citeauthor {VanDenBergen1999}].\relax }}{41}{figure.caption.38}% 
+\contentsline {figure}{\numberline {2.18}{\ignorespaces An illustration of convex hull with face $F$, the vertices $\textbf {A} = \textbf {q}_1$, $\textbf {B} = \textbf {q}_2$ and $\textbf {C} = \textbf {q}_3$, as well as the Voronoi regions (\textbf {E} for edge, \textbf {V} for vertex) $\textbf {E}_{AB}, \textbf {E}_{AC}, \textbf {E}_{BC}, \textbf {V}_A, \textbf {V}_B$ and $\textbf {V}_C$. \textbf {Source}: [\citeauthor {Ericson2004}]. \relax }}{43}{figure.caption.39}% 
+\contentsline {figure}{\numberline {2.19}{\ignorespaces SQ (superellipsoidals) drawn, for constant $a_1, a_2, a_3$ but varying $\epsilon _1$ (increasing in the figure's $y$-axis) and $\epsilon _2$ (increasing in the figure's $x$-axis). $\epsilon _1,\epsilon _2 = \{\frac {1}{4}, \frac {1}{2}, 1, 2, 4\}$. \textbf {Source}: [\citeauthor {Kindlmann2004}].\relax }}{45}{figure.caption.40}% 
+\contentsline {figure}{\numberline {2.20}{\ignorespaces A SQ that has been translated and rotated by a transformation \textbf {T}. \textbf {Source}: [\citeauthor {Jaklic2000}].\relax }}{48}{figure.caption.41}% 
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Tapered SQ along two axes. \textbf {Source}: [\citeauthor {Jaklic2000}].\relax }}{49}{figure.caption.42}% 
+\contentsline {figure}{\numberline {2.22}{\ignorespaces A SQ that has been bent in three different bending planes, each of which have been rotated around the $z$-axis. \textbf {Source}: [\citeauthor {Jaklic2000}].\relax }}{50}{figure.caption.43}% 
+\contentsline {figure}{\numberline {2.23}{\ignorespaces \textbf {Source}:[\citeauthor {Barr1984}]\relax }}{51}{figure.caption.44}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces A seven link arm.\relax }}{55}{figure.caption.46}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Collision detection testing with a three link arm.\relax }}{56}{figure.caption.47}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Four different superellipses sampled from $-\pi $ to $\pi $ with the same increment value.\relax }}{57}{figure.caption.48}% 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces The set of points (in the $x$-$y$-plane) are all to one side of the origin (Black). Blue $(0,0, 10)^T$ was arbitrarily chosen in the initial steps and Red $(0,0,1)^T$ is the point most extreme in direction $(0, 0, -10)^T$. The algorithm terminates according to Termination Condition 1. Note that the points are inflated for visual purposes only.\relax }}{61}{figure.caption.49}% 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces A $4$ simplex (White-Blue-Cyan-Red) with the origin (Black). Note that the points have been inflated for visual purposes only. Also, note that the origin was purposefully rendered to be much smaller than the other four points, which are different in size due to the perspective.\relax }}{61}{figure.caption.50}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Visualization of Test 1.III.\relax }}{65}{figure.caption.52}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Visualization of Test 2.VI. The $z$-axis is horizontally positive to the left.\relax }}{66}{figure.caption.54}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Visualization of a particularly troublesome case for the GJK algorithm. The obstacle has been translated 25 units along the positive $z$-axis.\relax }}{67}{figure.caption.55}% 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Start and goal configurations for every test. Note that the point of view was rotated between the snapshots.\relax }}{68}{figure.caption.59}% 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Example of a motion plan, with various configurations over time. Red is the start configuration, blue is the provided goal configuration and green is the accepted returned final configuration. The yellow configurations are intermediary steps.\relax }}{69}{figure.caption.60}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Non-convex: $a_1=0.5$, $a_2=5$, $a_3=10$, $\epsilon _1=4$, $\epsilon _2=0.2$. \relax }}{71}{figure.caption.61}% 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Supertoroid: $a_1=2$, $a_2=2$, $a_3=1$, $\epsilon _1=1$, $\epsilon _2=1$. \relax }}{71}{figure.caption.62}% 
